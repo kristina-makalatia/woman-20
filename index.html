@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="slider-wraper">
+        <button class="arrow arrow-left" id="arrow-left"><</button>
+        <button class="arrow arrow-right" id="arrow-right">></button>
+        <div class="slider-content" id="slider-content"></div>
+      </div>
+    </section>
+
+    <section>
+      <form action="" id="resgitrationForm" method="POST">
+        <div>
+          <input type="text" name="username" id="usernameField" />
+          <span class="error-text" id="error_username"></span>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            id="passwordField"
+            placeholder="Enter your password"
+          />
+          <i id="toogleIcon" class="fa-solid fa-eye"></i>
+          <span class="error-text" id="error_password"></span>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password2"
+            id="passwordFieldrepeat"
+            placeholder="Repeat Your password"
+          />
+          <span class="error-text" id="error_password2"></span>
+        </div>
+        <div>
+          <input type="email" id="emailField" name="email" />
+          <span id="text"></span>
+        </div>
+        <div>
+          <input type="checkbox" name="agree" id="agreeTerms" />
+          <label for="agreeTerms"> I agree terms and conditions</label>
+          <span class="error-text" id="error_agree"></span>
+        </div>
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+  </body>
+</html>
