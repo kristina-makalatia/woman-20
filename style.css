@@ -19,12 +19,11 @@
     position: relative;
 }
 .arrow-right {
-    right: 30px;
+    right: 30px
 }
 .arrow-left {
     left: 30px;
 }
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -47,7 +46,6 @@
 .activeDot {
     border:2px solid #fff;
 }
-
 .bg-image {
     width: 100%;
     height: 500px;
@@ -61,4 +59,36 @@
 }
 #text {
     display: block;
+}
+.scroll {
+    background-color: red;
+}
+body {
+    padding-top: 56px;
+}
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s linear;
+}
+a::after {
+    content: ' ';
+    position: absolute;
+    left:0;
+    bottom:0;
+    height: 1px;
+    width:0%;
+    background-color: red;
+    transition: all 0.5s linear;
+}
+
+a:hover::after {
+    width: 80%;
 }

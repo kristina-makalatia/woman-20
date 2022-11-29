@@ -1,3 +1,6 @@
+ "use strict";
+
+
 let data = [
   {
     id: 1,
@@ -231,3 +234,26 @@ emailField.addEventListener("keyup", function () {
     errorSpan.innerHTML = " ";
   }
 });
+
+
+
+// js navigation bg on scroll
+
+let myNav = document.getElementById("nav");
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop >= 280) {
+    myNav.classList.add("scroll");
+  } else {
+    myNav.classList.remove("scroll");
+  }
+};
+
+
+
+//scrollTo
+// button.addEventListener('click', function() {
+//   window.scrollTo({
+
+//   })
+// })
